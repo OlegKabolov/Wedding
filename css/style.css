@@ -1,0 +1,99 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
+		/*Body*/
+
+body {
+	max-width: 1920px;
+	min-width: 1000px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+		/* HEADER */
+
+header {
+	position: relative;
+}
+.top-header {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	background-color: #fff;
+	padding-bottom: 15px;
+}
+.top-header__container {
+	padding-left: 100px;
+	padding-right: 250px;
+}
+.top-header__logo {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 10px 0px;
+}
+.top-header__logo:hover {
+	cursor: pointer;
+}
+.top-header__menu {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding-top: 31px;
+}
+.top-header__menu li {
+	padding-right: 15px;
+	text-align: center;
+}
+.top-header__menu a {
+	padding: 25px 12px;
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000;
+}
+.top-header__menu a:active:focus {
+	background: #DD666C;
+}
+.top-header__menu a:hover {
+	background: #63C7BD;
+	color: #fff;
+}
+
+		/*SLIDER*/
+
+.top-slider__arrows, .top-slider__controls, .slide-2, .slide-3 { /*временный стиль для кнопок*/
+	display: none; 
+}
+
+.top-slider__slide {
+	background-image: url(../img/slider-01.jpg);
+	background-size: cover;
+	height: 576px;
+	width: 100%;
+	text-align: center;
+}
+.top-slider__slide h2 {
+	font-size: 68px;
+    font-family: 'Marck Script', cursive;
+    color: #ffffff;
+}
+.top-slider__slide h3 {
+    font-size: 48px;
+    color: #ffffff;
+}
+.top-slider__slide p {
+	color: #fff; 
+}
+.top-slider__slide b {
+	color: #dd666c;
+    font-size: 40px;
+    font-family: 'Marck Script', cursive;
+}
