@@ -10,14 +10,13 @@
 body {
 	max-width: 1920px;
 	min-width: 1000px;
+	font-family: 'Barlow', sans-serif;
 }
-ul {
+ul, p, h2, h3, h4, h5, h6 {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-
-		/* HEADER */
 
 header {
 	position: relative;
@@ -79,6 +78,7 @@ header {
 	height: 576px;
 	width: 100%;
 	text-align: center;
+	padding-top: 100px;
 }
 .top-slider__slide h2 {
 	font-size: 68px;
@@ -91,9 +91,95 @@ header {
 }
 .top-slider__slide p {
 	color: #fff; 
+	padding-bottom: 25px;
 }
 .top-slider__slide b {
 	color: #dd666c;
     font-size: 40px;
     font-family: 'Marck Script', cursive;
+}
+.top-slider__button {
+	padding: 20px 25px;
+	background: #63c7bd;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.2s;
+	display: inline-block;
+}
+.top-slider__button:hover {
+	background: #DD666C;
+}
+
+		/*ABOUT*/
+
+.about__head {
+	font-size: 60px;
+    font-family: 'Marck Script', cursive;
+    color: #222222;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about strong {
+	color: #dd666c;
+	text-decoration: underline; /*общий стиль для всех подчеркнутых тегов strong*/
+}
+.about__bride, .about__fionce {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.about__inner-head {
+	font-size: 40px;
+    font-family: 'Marck Script', cursive;
+    padding-bottom: 25px;
+}
+.about__description {
+    color: #666666;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+    max-width: 730px;
+    max-height: 82px;
+    line-height: 1.78;  			/*общий стиль для текстовых блоков*/
+}
+.about__fionce-img img {
+	padding-left: 30px;
+}
+
+.about-fionce-text {
+	padding-left: 30px;
+}
+
+		/*ABOUT*/
+
+.story__container {
+	display: flex;
+	flex-wrap: nowrap;
+}
+.story__left-side {
+
+}
+.story__left-date {
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+	padding: 40px 30px;
+	background-color: #dd666c;
+	color: #fff;
+	margin-bottom: 100px;
+}
+.story__left-desc span {
+	display: inline-block;
+}
+
+.story__left-desc {
+	background-color: #F1F1F1;
+	font-family: 'Barlow', sans-serif;
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.78;
+    padding: 40px 20px;
 }
