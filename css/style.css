@@ -155,31 +155,118 @@ header {
 }
 
 		/*ABOUT*/
-
+.story__head {
+	font-size: 60px;
+	font-family: 'Marck Script', cursive;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.story__head-bottom {
+	display: block;
+	text-align: center;
+	color: #666666;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+    padding-bottom: 35px;
+}
 .story__container {
 	display: flex;
 	flex-wrap: nowrap;
+	justify-content: center;
+	position: relative;
 }
-.story__left-side {
-
+.story__left-side, .story__right-side {
+	display: flex;
+	flex-direction: column;
 }
-.story__left-date {
+.story__left-date p {
     font-family: 'Marck Script', cursive;
     font-size: 30px;
-	padding: 40px 30px;
+    float: right;
+	padding: 40px 40px;
+	margin-right: 40px;
 	background-color: #dd666c;
 	color: #fff;
 	margin-bottom: 100px;
 }
-.story__left-desc span {
-	display: inline-block;
+.story__right-date p {
+	font-family: 'Marck Script', cursive;
+    font-size: 30px;
+	padding: 40px 40px;
+	margin-left: 16px;
+	background-color: #63C7BD;
+	color: #fff;
+	margin-bottom: 100px;
+	float: left;
+}
+.story__left-desc, .story__left-date {
+	position: relative;
 }
 
-.story__left-desc {
+.story__left-desc-wrapper, .story__right-desc-wrapper {
+	float: right;
 	background-color: #F1F1F1;
 	font-family: 'Barlow', sans-serif;
     color: #666666;
     font-size: 15px;
     line-height: 1.78;
-    padding: 40px 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;  				/*общий стиль для текстовых блоков*/
+	margin-bottom: 50px;
+}
+.story__left-desc-wrapper {
+	margin-right: 40px;
+	padding: 30px 35px;
+}
+.story__right-desc-wrapper {
+	margin-left: 40px;
+	padding: 30px 35px;
+}
+.story__left-desc-wrapper h4, .story__right-desc-wrapper h4 {
+	font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    color: #222222; 					/*общий стиль для текстовых блоков*/
+    font-weight: normal
+}
+.story__left-desc-wrapper p, .story__right-desc-wrapper p {
+	max-width: 440px;
+	color: #666666;
+    font-size: 15px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 1.80857;				/*общий стиль для текстовых блоков*/
+}
+.story__left-desc-wrapper p {
+	text-align: right;
+}
+.story__right-desc-wrapper p {
+	text-align: left;
+}
+.centering-block-left, .centering-block-right {
+	margin-bottom: 25px;
+}
+.main-timeline-box::before {
+    top: 20px;
+    bottom: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+    background-color: #f1f1f1;
+    left: calc(50% - 1px);
+    height: calc(100% + 4rem);
+}
+.story__iconBackground {
+    position: absolute;
+    left: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 30px;
+    display: inline-block;
+    background-color: #f1f1f1;
+    top: 20px;
+    margin-left: -10px;
 }
